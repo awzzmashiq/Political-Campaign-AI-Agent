@@ -9,6 +9,8 @@ TVKCampaignAI is an open-source, modular AI agent designed to analyze social med
 
 ## 🌐 Web Interface
 
+![TVK Campaign AI Web Interface](https://github.com/awzzmashiq/Political-Campaign-AI-Agent/assets/screenshot.png)
+
 **Beautiful Streamlit-based web UI for easy interaction!**
 
 The web interface includes:
