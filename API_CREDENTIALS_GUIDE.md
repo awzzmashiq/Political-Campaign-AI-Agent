@@ -1,14 +1,16 @@
 # X API Credentials Setup Guide
 
-## Credentials You Have
-
-✅ **API Key**: `TqceYUtn10fky0fFknZA59XS7`
-✅ **API Key Secret**: `DFgn0Je4C8db3cDozfXw1Rr71XlM0Rh5W4EAnArfrAqdnUe7xc`
-
 ## Credentials You Need
 
-❌ **Access Token**: Need to generate
-❌ **Access Token Secret**: Need to generate
+You need **4 credentials** to use the API:
+
+✅ **Consumer Key** (API Key)  
+✅ **Consumer Secret** (API Key Secret)  
+✅ **Access Token**  
+✅ **Access Token Secret** (optional)  
+
+Plus optionally:
+✅ **Bearer Token** (for v2 API)
 
 ## How to Get Access Token and Secret
 
@@ -35,22 +37,26 @@ If you need to generate tokens dynamically or for production use, you'll need to
 Edit `example.py` and replace lines 31-34 with your credentials:
 
 ```python
-CONSUMER_KEY = "TqceYUtn10fky0fFknZA59XS7"
-CONSUMER_SECRET = "DFgn0Je4C8db3cDozfXw1Rr71XlM0Rh5W4EAnArfrAqdnUe7xc"
-ACCESS_TOKEN = "your_access_token_here"
-ACCESS_TOKEN_SECRET = "your_access_token_secret_here"
+CONSUMER_KEY = "YOUR_CONSUMER_KEY_HERE"
+CONSUMER_SECRET = "YOUR_CONSUMER_SECRET_HERE"
+ACCESS_TOKEN = "YOUR_ACCESS_TOKEN_HERE"
+ACCESS_TOKEN_SECRET = "YOUR_ACCESS_TOKEN_SECRET_HERE"
 ```
+
+⚠️ **SECURITY WARNING**: Never commit real credentials to Git!
 
 ### Method 2: Use .env file (More Secure)
 
 Create a `.env` file in the project root:
 
 ```env
-TWITTER_CONSUMER_KEY=TqceYUtn10fky0fFknZA59XS7
-TWITTER_CONSUMER_SECRET=DFgn0Je4C8db3cDozfXw1Rr71XlM0Rh5W4EAnArfrAqdnUe7xc
-TWITTER_ACCESS_TOKEN=your_access_token_here
-TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret_here
+TWITTER_CONSUMER_KEY=YOUR_CONSUMER_KEY_HERE
+TWITTER_CONSUMER_SECRET=YOUR_CONSUMER_SECRET_HERE
+TWITTER_ACCESS_TOKEN=YOUR_ACCESS_TOKEN_HERE
+TWITTER_ACCESS_TOKEN_SECRET=YOUR_ACCESS_TOKEN_SECRET_HERE
 ```
+
+⚠️ Add `.env` to `.gitignore` to prevent committing credentials
 
 Then uncomment line 11 in `example.py`:
 ```python

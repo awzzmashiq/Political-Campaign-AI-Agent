@@ -26,15 +26,15 @@ def main():
     # ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
     # ACCESS_TOKEN_SECRET = os.getenv("TWITTER_ACCESS_TOKEN_SECRET")
     
-    # Option 2: Direct configuration
-    # Your X API credentials
-    CONSUMER_KEY = "TqceYUtn10fky0fFknZA59XS7"
-    CONSUMER_SECRET = "DFgn0Je4C8db3cDozfXw1Rr71XlM0Rh5W4EAnArfrAqdnUe7xc"
-    ACCESS_TOKEN = "1624801416-1vDoeigmNu1utvZlK2NpyOg6WGRhyohHmIqZ3Mx"
-    ACCESS_TOKEN_SECRET = "dNvj2S7sTM1UNMbajTySqXP17EcaBgukCrGGz0oH4M4Cn"
+    # Option 2: Direct configuration (⚠️ NOT RECOMMENDED FOR PRODUCTION)
+    # Replace with your actual X API credentials
+    CONSUMER_KEY = "YOUR_CONSUMER_KEY_HERE"
+    CONSUMER_SECRET = "YOUR_CONSUMER_SECRET_HERE"
+    ACCESS_TOKEN = "YOUR_ACCESS_TOKEN_HERE"
+    ACCESS_TOKEN_SECRET = "YOUR_ACCESS_TOKEN_SECRET_HERE"
     
-    # Bearer Token (for v2 API - free tier)
-    BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAJSf5AEAAAAAG8gOwPA9Wlib5UVxEgc0GH6RMrk%3DIPYqK0bVdHc6cZtkyN5st6ncETfqTDuoYVYvIXJlfGDPisMjdt"
+    # Bearer Token (for v2 API - optional)
+    BEARER_TOKEN = "YOUR_BEARER_TOKEN_HERE"
     
     # Check if credentials are set
     if not all([CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET]):

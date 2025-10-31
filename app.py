@@ -106,11 +106,19 @@ with st.sidebar:
         access_token_secret = st.text_input("Access Token Secret", type="password")
         bearer_token = st.text_input("Bearer Token (Optional)", type="password", help="For v2 API free tier")
     else:
-        consumer_key = "TqceYUtn10fky0fFknZA59XS7"
-        consumer_secret = "DFgn0Je4C8db3cDozfXw1Rr71XlM0Rh5W4EAnArfrAqdnUe7xc"
-        access_token = "1624801416-1vDoeigmNu1utvZlK2NpyOg6WGRhyohHmIqZ3Mx"
-        access_token_secret = "dNvj2S7sTM1UNMbajTySqXP17EcaBgukCrGGz0oH4M4Cn"
-        bearer_token = "AAAAAAAAAAAAAAAAAAAAAJSf5AEAAAAAG8gOwPA9Wlib5UVxEgc0GH6RMrk%3DIPYqK0bVdHc6cZtkyN5st6ncETfqTDuoYVYvIXJlfGDPisMjdt"
+        # Use environment variables for security
+        import os
+        try:
+            from dotenv import load_dotenv
+            load_dotenv()
+        except ImportError:
+            pass
+        
+        consumer_key = os.getenv("TWITTER_CONSUMER_KEY", "")
+        consumer_secret = os.getenv("TWITTER_CONSUMER_SECRET", "")
+        access_token = os.getenv("TWITTER_ACCESS_TOKEN", "")
+        access_token_secret = os.getenv("TWITTER_ACCESS_TOKEN_SECRET", "")
+        bearer_token = os.getenv("TWITTER_BEARER_TOKEN", "")
     
     # Initialize button
     if st.button("🔌 Initialize Agent", type="primary", use_container_width=True):

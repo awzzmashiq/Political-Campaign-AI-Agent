@@ -23,11 +23,13 @@ Welcome to TVKCampaignAI! This guide will get you running in 5 minutes.
 Edit `example.py` lines 31-34:
 
 ```python
-CONSUMER_KEY = "TqceYUtn10fky0fFknZA59XS7"  # ✅ Already set
-CONSUMER_SECRET = "DFgn0Je4C8db3cDozfXw1Rr71XlM0Rh5W4EAnArfrAqdnUe7xc"  # ✅ Already set
-ACCESS_TOKEN = "PASTE_YOUR_ACCESS_TOKEN_HERE"  # ← Add this
-ACCESS_TOKEN_SECRET = "PASTE_YOUR_ACCESS_TOKEN_SECRET_HERE"  # ← Add this
+CONSUMER_KEY = "YOUR_CONSUMER_KEY_HERE"  # ← Add your Consumer Key
+CONSUMER_SECRET = "YOUR_CONSUMER_SECRET_HERE"  # ← Add your Consumer Secret
+ACCESS_TOKEN = "YOUR_ACCESS_TOKEN_HERE"  # ← Add your Access Token
+ACCESS_TOKEN_SECRET = "YOUR_ACCESS_TOKEN_SECRET_HERE"  # ← Add your Access Token Secret
 ```
+
+**Better**: Use `.env` file for security (see API_CREDENTIALS_GUIDE.md)
 
 ### Step 3: Install & Run
 
