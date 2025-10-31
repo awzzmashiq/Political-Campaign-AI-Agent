@@ -1,0 +1,6 @@
+Please provide the image file from your UI screenshot as tvk_ui_screenshot.png
+
+Looking at the screenshot you shared, I can see the beautiful UI!
+Once you provide the image file, I'll add it to the README.
+
+The image should be saved as: tvk_ui_screenshot.png
